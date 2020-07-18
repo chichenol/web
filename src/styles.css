@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* Social Media Icons */
+
+.fa {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.9;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  border-radius: 30%;
+}
