@@ -1,5 +1,5 @@
 <div class="jumbotron" style="background-color: inherit; height: calc(95vh);">
-    <div id="topLogoCard" class="card mx-auto">
+    <div id="topLogoCard" class="card mx-auto m-3">
         <img src="../../assets/img/mainLogo.jpg" >
     </div>
 
@@ -11,7 +11,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            
+
             <div class="carousel-inner">
                 <div *ngFor="let c of categories | slice:0:1" class="carousel-item active">
                     <img class="d-inline-block w-100" src={{c.img_path}} alt={{c.title}}>
