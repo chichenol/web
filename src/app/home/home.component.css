@@ -14,9 +14,15 @@
 
 /* Category Carousel */
 .carousel-item {
+    border-radius: 20px;
     text-align: center;
+    background-color: rgba(100, 100, 100, 0.9)
 }
 
 .carousel-item img {
-    height: 200px;
+    max-width: 267px;
+    max-height: 200px;
+    padding-top: 10px;
+    width: auto;
+    height: auto;
 }
