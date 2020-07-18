@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service'
+import { Category } from '../../model/category'
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  categories: Category[];
+
+  getCategories(): void {
+    this.categories = this.dataService.getCategories()
+  }
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    // Load Categories for carousel
+    this.getCategories()
   }
 
 }
